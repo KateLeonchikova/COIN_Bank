@@ -1,0 +1,11 @@
+@import '_variables.scss';
+@import '_mixin.scss';
+
+@include font-face($font-family, 400, normal, 'UbuntuRegular');
+@include font-face($font-family, 500, normal, 'UbuntuMedium');
+@include font-face($second-family, 300, normal, 'WorkSansLight');
+@include font-face($second-family, 400, normal, 'WorkSansRegular');
+@include font-face($second-family, 500, normal, 'WorkSansMedium');
+@include font-face($second-family, 600, normal, 'WorkSansSemiBold');
+@include font-face($second-family, 700, normal, 'WorkSansBold');
+@include font-face($third-family, 500, normal, 'RobotoMedium');

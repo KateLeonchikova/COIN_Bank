@@ -1,0 +1,511 @@
+@import '_variables.scss';
+
+@media (max-width: 1400px) {
+  .changed__currency-form {
+    grid-template-columns: 1fr;
+  }
+
+  .changed__currency-form-top {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    justify-items: start;
+  }
+
+  .changed__currency-btn {
+    grid-column: 1;
+    grid-row: 3;
+    padding: 20px;
+    width: fit-content;
+  }
+
+  .currencies__changes-wrapper,
+  .currency__accounts-wrapper {
+    padding: 40px;
+  }
+
+  .transfer__wrapper {
+    padding: 25px 45px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .details__container {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  }
+
+  .dynamics__wrapper {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 992px) {
+  .accounts__top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .accounts__main {
+    gap: 30px;
+  }
+
+  .card {
+    max-width: 335px;
+  }
+
+  .currency__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .currencies__changes-wrapper {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .changed__currency-wrapper {
+    padding: 40px;
+  }
+
+  .changed__currency-form {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+  }
+
+  .changed__currency-form-top {
+    display: flex;
+  }
+
+  .changed__currency-btn {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    padding: 47px 13px;
+  }
+
+  .details__account,
+  .balance__account {
+    font-size: 24px;
+  }
+
+  .transfer__wrapper,
+  .dynamics__wrapper {
+    grid-column: 1 / span 2;
+  }
+
+  .history__wrapper {
+    padding: 25px;
+  }
+
+  .history__table-head {
+    padding: 15px 10px 15px 18px;
+    font-size: 16px;
+  }
+
+  .history__table-cell {
+    padding: 15px 10px 15px 18px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .accounts__wrapper {
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+  }
+
+  .btn-submit,
+  .accounts__btn,
+  .card__btn,
+  .transfer__btn {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .accounts__btn {
+    padding-left: 38px;
+    background-position: 14px center;
+  }
+
+  .transfer__btn {
+    padding-left: 44px;
+    background-position: 14px center;
+  }
+
+  .header__burger_btn {
+    display: block;
+  }
+
+  .header__nav {
+    position: absolute;
+    right: -250px;
+    top: 0;
+    padding-top: 98px;
+    padding-bottom: 10px;
+    width: 250px;
+    border-bottom-left-radius: 10px;
+    visibility: hidden;
+    background-color: $shy-grey;
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  .header.open .header__nav {
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+
+  .header__list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .header__link {
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    background-color: transparent;
+  }
+
+  .banks__wrapper,
+  .accounts__container,
+  .currency__container,
+  .details__container,
+  .balance__container {
+    padding: 25px 0;
+  }
+
+  .banks__title,
+  .currency__title {
+    margin-bottom: 25px;
+    font-size: 28px;
+  }
+
+  #map {
+    height: 500px;
+  }
+
+  .details__container {
+    gap: 20px;
+  }
+
+  .details__title,
+  .balance__title,
+  .accounts__title {
+    margin-bottom: 0;
+    font-size: 28px;
+  }
+
+  .details__btn-back {
+    padding: 10px 14px;
+    font-size: 14px;
+    padding-left: 30px;
+    background-size: 14px;
+    background-position: 10px center;
+  }
+
+  .details__balance {
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  .details__balance-subtitle,
+  .balance__content-subtitle {
+    margin-right: 25px;
+  }
+
+  .dynamics__wrapper,
+  .transactions__dynamics_wrapper {
+    padding: 25px;
+  }
+
+  .balance__container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .balance__content {
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  .balance__annual,
+  .balance__transactions_annual,
+  .balance__container .balance__history {
+    grid-column: 1;
+  }
+
+  .history__wrapper {
+    display: grid;
+    max-width: 707px;
+    width: 100%;
+  }
+
+  .pagination__page_btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .pagination__page_btn.active {
+    margin: 0 6px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 625px) {
+  .changed__currency-form-top {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    justify-items: start;
+  }
+
+  .changed__currency-btn {
+    grid-column: 1;
+    grid-row: 3;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__container {
+    padding: 25px 0;
+  }
+
+  .header__title {
+    font-size: 30px;
+  }
+
+  .header__link {
+    font-size: 16px;
+  }
+
+  .header__nav {
+    width: 230px;
+  }
+
+  .header__burger_btn {
+    height: 30px;
+    width: 30px;
+  }
+
+  .header__burger_span {
+    width: 30px;
+    height: 2px;
+  }
+
+  .header__burger_span:nth-child(1) {
+    transform: translateY(-10px);
+  }
+
+  .header__burger_span:nth-child(3) {
+    transform: translateY(10px);
+  }
+
+  .main__entrance {
+    max-width: 300px;
+    width: 100%;
+    padding: 30px;
+  }
+
+  .main__title {
+    margin-bottom: 18px;
+    font-size: 24px;
+  }
+
+  .main__form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 14px;
+  }
+
+  .main__form-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0;
+  }
+
+  .input__label {
+    margin-bottom: 10px;
+    grid-column: 1;
+    text-align: left;
+  }
+
+  .input__control {
+    grid-column: 1;
+    height: 40px;
+  }
+
+  .btn-submit {
+    grid-column: 1;
+  }
+
+  .error-message {
+    top: 0;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .card__account {
+    font-size: 15px;
+  }
+
+  .card__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .card__btn {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  #map {
+    height: 300px;
+  }
+
+  .currency__accounts-code,
+  .currency__accounts-amount,
+  .currencies__changes-item-pair,
+  .currencies__changes-item-value {
+    font-size: 14px;
+  }
+
+  .currencies__changes-item-pair,
+  .currency__accounts-code {
+    padding: 0 5px 0 0;
+  }
+
+  .currencies__changes-item-value,
+  .currency__accounts-amount {
+    padding: 0 0 0 5px;
+  }
+
+  .currencies__changes-item-value {
+    padding-right: 25px;
+  }
+
+  .currencies__changes-item:after,
+  .currency__accounts-item:after {
+    height: 14px;
+  }
+
+  .currency__accounts-item:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  .currencies__changes-wrapper,
+  .currency__accounts-wrapper,
+  .changed__currency-wrapper {
+    border-radius: 25px;
+    padding: 30px 20px;
+  }
+
+  .currencies__changes-item-value.rate__increase,
+  .currencies__changes-item-value.rate__decrease {
+    padding-right: 25px;
+  }
+
+  .changed__currency-form {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .changed__currency-form-top {
+    row-gap: 16px;
+  }
+
+  .changed__currency-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .dynamics__wrapper {
+    padding: 25px 15px;
+  }
+
+  .transfer__wrapper {
+    padding: 25px;
+  }
+
+  .details__container {
+    grid-template-columns: 1fr;
+  }
+
+  .transfer__wrapper,
+  .dynamics__wrapper,
+  .history__wrapper {
+    grid-column: 1;
+  }
+
+  .transfer__form-content {
+    margin-bottom: 20px;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .transfer__label {
+    text-align: left;
+  }
+
+  .transfer__input {
+    padding: 6px 8px 6px 10px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .custom-option {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .transfer__btn {
+    padding: 12px 20px;
+    padding-left: 44px;
+    font-size: 14px;
+    grid-column: 1;
+    background-position: 12px center;
+  }
+
+  .details__account,
+  .details__balance,
+  .balance__account,
+  .balance__content {
+    font-size: 16px;
+  }
+
+  .history__wrapper {
+    max-width: 516px;
+  }
+
+  .pagination__controls {
+    gap: 8px;
+  }
+
+  .pagination__dots {
+    font-size: 8px;
+  }
+
+  .pagination__page_btn {
+    padding: 6px;
+    font-size: 8px;
+  }
+
+  .pagination__page_btn.active {
+    margin: 0 4px;
+    width: 26px;
+    height: 26px;
+  }
+
+  .pagination__btn {
+    width: 5px;
+    height: 7px;
+    background-size: 5px 7px;
+  }
+}
