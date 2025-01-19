@@ -23,6 +23,9 @@ const contentWrapper = el('div', { class: 'content__wrapper' });
 setChildren(document.body, bodyWrapper);
 setChildren(bodyWrapper, contentWrapper);
 
+console.log('API_URL:', process.env.WEBPACK_API_URL);
+console.log('WS_URL:', process.env.WEBPACK_WS_URL);
+
 function initialize(contentRenderer, options = {}) {
   const header = renderHeader();
   setChildren(bodyWrapper, header, contentWrapper);
