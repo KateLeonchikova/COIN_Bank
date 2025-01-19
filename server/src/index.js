@@ -278,6 +278,14 @@ app.post("*", (req, res) => {
   res.end(response(null, "Invalid route"));
 });
 
+const path = require("path");
+
+app.use(express.static(path.join(__dirname, "frontend")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "frontend", "index.html"));
+});
+
 app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`);
 });
