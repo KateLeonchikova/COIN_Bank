@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
+const webpack = require('webpack');
 
 module.exports = (env) => ({
   entry: './src/main.js',
@@ -67,6 +68,12 @@ module.exports = (env) => ({
     }),
     new Dotenv({
       path: `.env.${env.production ? 'production' : 'development'}`,
+    }),
+    new webpack.DefinePlugin({
+      'process.env.WEBPACK_API_URL': JSON.stringify(
+        process.env.WEBPACK_API_URL
+      ),
+      'process.env.WEBPACK_WS_URL': JSON.stringify(process.env.WEBPACK_WS_URL),
     }),
   ],
 
