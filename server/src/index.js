@@ -16,7 +16,7 @@ const {
 
 const app = express();
 const expressWs = require("express-ws")(app);
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 
 const AUTH_DATA = Object.freeze({
   login: "developer",
