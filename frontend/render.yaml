@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: coin-bank
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    staticPublishPath: frontend
+    routes:
+      - type: rewrite
+        source: /.*
+        destination: /index.html
