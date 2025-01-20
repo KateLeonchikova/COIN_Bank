@@ -46,7 +46,9 @@ export async function renderAccountsPage(router) {
   await renderAccount(accounts.querySelector('.accounts__main'), '', router);
 
   // подключение к WebSocket-серверу (для получения данных о поступлении средств)
-  const socket = new WebSocket('ws://localhost:3000/currency-feed');
+  const WS_URL =
+    process.env.WEBPACK_WS_URL || 'ws://localhost:10000/currency-feed';
+  const socket = new WebSocket(WS_URL);
 
   socket.addEventListener('open', (event) => {
     console.log('Connected to WebSocket server');
