@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 10000;
 
 const AUTH_DATA = Object.freeze({
   login: "developer",
-  password: "skillbox",
+  password: "password",
   token: "ZGV2ZWxvcGVyOnNraWxsYm94",
 });
 
