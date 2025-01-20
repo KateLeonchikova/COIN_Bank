@@ -79,7 +79,7 @@
 
 1. **Клонирование репозитория:**
    ```bash
-   `git clone https://github.com/KateLeonchikova/COIN.git`
+   `git clone https://github.com/KateLeonchikova/COIN_Bank.git`
    ```
 2. **Переход в директорию проекта:**
    `cd frontend`
